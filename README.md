@@ -12,6 +12,84 @@ The Settlement System is a web-based application designed to manage financial se
 
 ---
 
+## Running the Settlement System Locally
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Node.js 14 or higher
+- npm or yarn
+
+### Backend Setup
+
+1. **Clone the Repository**
+    ```sh
+    git clone https://github.com/No1CanButMe/Leyline-Technologies
+    cd Leyline-Technologies/
+    cd backend/
+    ```
+
+2. **Create a Virtual Environment**
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3. **Install Dependencies**
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. **Run the Backend Server**
+    ```sh
+    uvicorn main:app --reload
+    ```
+
+The backend server will start running at `http://127.0.0.1:8000`.
+
+### Frontend Setup
+
+1. **Navigate to the Frontend Directory**
+    ```sh
+    # Root of the repository
+    cd ..
+    cd settlement-app/
+    ```
+
+2. **Install Dependencies**
+    ```sh
+    npm install
+    ```
+
+3. **Run the Frontend Development Server**
+    ```sh
+    npm start
+    ```
+
+The frontend development server will start running at `http://localhost:3000`.
+
+### Access the Application
+
+Open your browser and navigate to `http://localhost:3000` to access the Settlement System.
+
+---
+
+### Additional Notes
+
+- **Database**: The backend uses SQLite as the database. The database file (`settlement.db`) will be created automatically in the root directory when you run the backend server for the first time.
+
+- **WebSocket**: Ensure that your browser allows WebSocket connections. The application relies on WebSockets for real-time communication.
+
+---
+
+### Summary
+
+1. Clone the repository and navigate to the project directory.
+2. Set up the backend by creating a virtual environment, installing dependencies, and running the server.
+3. Set up the frontend by navigating to the `frontend` directory, installing dependencies, and running the development server.
+4. Access the application at `http://localhost:3000`.
+
+
 ## Features
 
 1. **Settlement Management**: 
