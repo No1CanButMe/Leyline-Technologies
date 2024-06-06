@@ -31,7 +31,7 @@ class SettlementModel(BaseModel):
     counter_offered: bool
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class SettlementUpdate(BaseModel):
